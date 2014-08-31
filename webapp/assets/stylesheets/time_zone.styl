@@ -1,0 +1,64 @@
+.timeZone
+  float left
+  margin-right 25px
+  margin-bottom 25px
+  position relative
+  width 200px
+  height 80px
+  user-select none !important
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 15px rgba(128, 128, 128, 0.1) inset
+  color app-black
+  padding 4px
+  font-size 14px
+  background-color white
+
+  &:after
+    top: 50%
+    bottom: 0
+    left: 10px
+    right: 10px
+    border-radius: 100px / 10px
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)
+
+  &:before, &:after
+    content: "";
+    position: absolute;
+    z-index: -2;
+
+  .timeZone-name
+    margin-bottom 5px
+
+  .timeZone-city
+    color app-dark-gray
+    font-size 13px
+    margin-top 2px
+
+  .timeZone-offset
+    color app-dark-gray
+    margin-left 5px
+
+  .timeZone-currentTime
+    text-align center
+    width 70px
+    position absolute
+    left 50%
+    bottom 0px
+    margin-left -35px
+    padding 7px
+    box-shadow(0px 1px 4px 1px rgba(app-dark-gray, .7) inset)
+
+  .remove
+    position absolute
+    right 5px
+    top 1px
+    transition color .1s
+    font-weight bold
+    font-size 14px
+    color app-gray
+    cursor pointer
+
+    &:hover
+      transition-duration .3s
+      color app-red
+
+

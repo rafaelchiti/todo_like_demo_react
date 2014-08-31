@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Time Zones App</title>
+
+  <link rel="stylesheet" href="all.css">
+</head>
+<body class="registration">
+
+  <h1>Please enter your details to register in the Application</h1>
+
+  {{#each messages}}
+    <div class="session-message">
+      {{ this }}
+    </div>
+  {{/each}}
+
+  {{#if message.length}}
+    <div class="session-message">
+      {{ message }}
+    </div>
+  {{/if}}
+
+  <form class="signUp-form" action="signup" method="post">
+    <input type="text" value="{{user.username}}" name="username" placeholder="Please enter your email here"/>
+    <input type="password" name="password" placeholder="Please enter your password here"/>
+    <input class="button" type="submit" value="Sign up"/>
+    <a href="/login" class="alternateRegistrationAction">Or sign in if you are already registered.</a>
+  </form>
+
+
+</body>
+</html>

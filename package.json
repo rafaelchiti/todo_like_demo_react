@@ -1,0 +1,66 @@
+{
+  "name": "rafael-chiti",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.toptal.com:Rafael-Chiti/rafael-chiti.git"
+  },
+  "dependencies": {
+    "express": "~3.5.0",
+    "underscore": "~1.6.0",
+    "backbone": "~1.1.2",
+    "connect-flash": "~0.1.1",
+    "passport": "~0.2.0",
+    "react": "~0.9.0",
+    "jquery": "~2.1.0",
+    "jquery-ui": "~1.10.5",
+    "hbs": "~2.5.0",
+    "stylus": "~0.42.3",
+    "nib": "~1.0.2",
+    "passport-local": "~1.0.0",
+    "mongoose": "~3.8.11",
+    "passport-http": "~0.2.2",
+    "passport-local-mongoose": "~0.3.0",
+    "browserify": "~3.33.0",
+    "moment": "~2.7.0",
+    "superagent": "~0.18.0",
+    "iz": "~0.5.1"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.2",
+    "glob": "~3.2.9",
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1",
+    "es6ify": "~1.1.0",
+    "reactify": "~0.10.0",
+    "vinyl-source-stream": "~0.1.1",
+    "gulp-open": "~0.2.8",
+    "gulp-nodemon": "~1.0.2",
+    "open": "0.0.5",
+    "gulp-util": "~2.2.14",
+    "watchify": "~0.10.0",
+    "gulp-mocha": "~0.4.1",
+    "gulp-clean": "~0.3.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": "true"
+        }
+      ],
+      "es6ify"
+    ]
+  },
+  "author": "Rafael Chiti",
+  "license": "ISC"
+}
